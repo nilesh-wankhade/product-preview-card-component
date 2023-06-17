@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.perfume-img img {
+    width: 250px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    height: 375px;
+    width: 500px;
+}
+
+.content {
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+button {
+    padding: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cart {
+    width: 20px;
+    padding-right: 6px;
+}
+
+h1 {
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+p {
+    margin-bottom: 20px;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+span {
+    font-size: 10px;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+p.heading {
+    letter-spacing: 4px;
+    
+    font-size: 12px;
+}
+
+/* Mobile Design */
+
+@media(max-width:500px){
+    .card {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .perfume-img img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 250px;
+    }
+    .content {
+        padding: 20px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0px 0px 10px 10px;
+        margin-top: -30px;
+    }
+    .card {
+       
+        height: 80vh;
+        width: 500px;
+        padding: 25px;
+       
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+    }
+    button{
+        padding: 12px;
+    }
+}
+
